@@ -1,0 +1,7 @@
+!.*.js
+assets
+bin
+dist
+migrations
+node_modules
+scripts
