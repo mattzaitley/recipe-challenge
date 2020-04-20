@@ -17,6 +17,6 @@ export const get = (url, params = {}) =>
         resolve(res.data);
       })
       .catch((err) => {
-        reject(err);
+        reject(err.message);
       }),
   );

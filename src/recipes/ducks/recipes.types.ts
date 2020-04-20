@@ -21,7 +21,7 @@ export interface RecipeDetailsState {
 export interface ApiRecipe {
   idMeal: string;
   strMeal: string;
-  strMealThumb;
+  strMealThumb: string;
 }
 
 export interface ApiRecipeDetail extends ApiRecipe {

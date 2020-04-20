@@ -17,7 +17,7 @@ export const adaptRecipeDetailsResponse = (
 ): RecipeDetail => {
   const ingredients = [];
   for (let i = 1; i <= 20; i += 1) {
-    if (meal[`strIngredient${i}`] !== '') {
+    if (meal[`strIngredient${i}`]) {
       ingredients.push({
         ingredient: meal[`strIngredient${i}`],
         measurement: meal[`strMeasure${i}`],

@@ -10,7 +10,7 @@ import {
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
-  root: { minHeight: 250, width: 300 },
+  root: { minHeight: 250, width: 300, margin: 24 },
   media: {
     height: 0,
     paddingTop: '56.25%',
