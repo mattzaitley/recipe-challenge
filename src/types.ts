@@ -1,12 +1,19 @@
-import { Action } from 'redux';
-import { RecipesState } from './recipes/ducks/recipes.types';
-import { CategoriesState } from './categories/ducks/categories.types';
+import {
+  RecipesState,
+  RecipeDetailsState,
+  RecipesActions,
+} from './recipes/ducks/recipes.types';
+import {
+  CategoriesState,
+  CategoriesActions,
+} from './categories/ducks/categories.types';
 
 export type ToResponse<T> = [Error?, T?];
 
 export interface AppState {
-  recipes: RecipesState;
+  recipesList: RecipesState;
+  recipeDetails: RecipeDetailsState;
   categories: CategoriesState;
 }
 
-export type AppActions = Action;
+export type AppActions = CategoriesActions | RecipesActions;

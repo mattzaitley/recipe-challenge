@@ -1,5 +1,17 @@
-import { CATEGORIES_TYPES } from './categories.types';
+import {
+  CATEGORIES_TYPES,
+  Category,
+  CategoriesReceivedAction,
+  RequestCategoriesAction,
+} from './categories.types';
 
-export const requestCategories = () => ({
+export const requestCategories = (): RequestCategoriesAction => ({
   type: CATEGORIES_TYPES.REQUEST_CATEGORIES,
+});
+
+export const categoriesReceived = (
+  categories: Category[],
+): CategoriesReceivedAction => ({
+  type: CATEGORIES_TYPES.CATEGORIES_RECEIVED,
+  payload: { categories },
 });
